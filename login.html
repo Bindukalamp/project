@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <title>TMS Home</title>   
+    <link rel="stylesheet" href="../static/css/form.css">
+     
+</head>
+
+
+<body>    
+    <h1>Welcome to Task Management System</h1> 
+    <h2>Enter Your Login Details</h2> 
+
+    <form action="/emp_home" method="post"> 
+    <label>name:</label>     
+    <input type="text" name="name"> 
+    <br>  
+    <br> 
+    <label>staff_id:</label> 
+    <input type="staff_id" name="staff_id">  
+    <br> 
+    <br> 
+    <input type="submit" value="login" class="submit-button">
+    <br>
+    {{msg}} 
+   </form> 
+   
+</body> 
+</html>

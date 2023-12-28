@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Update</title>
+    <link rel="stylesheet" href="../static/css/form.css">
+    <style>
+       
+        .description input {
+            width: 1200px;
+            height: 400px; 
+        }
+    </style>
+    
+    
+</head>
+
+
+<body>
+
+    <div class="form"></div>
+    <br>
+    <h1>Enter Project Details</h1><br>
+    <form action="/addProject" method="post">
+       
+       
+            
+        <p>project:<input name="project" type="text" placeholder="Project Name"></p>
+            
+        <p>in_charge:<input name="in_charge" type="text" placeholder="In_charge Name"></p>
+            
+        <p>starting_date:<input name="starting_date" type="date"></p>
+            
+            
+        <p>due_date:<input name="due_date" type="date"></p>
+            
+            
+        <p>status:<input name="status" type="text"></p>
+                
+                
+        <p>id:<input name="id" type="number"></p>
+                
+            
+        <div class="description">
+        <label for="Description">Description:</label>
+        <input name="Description" type="text">
+        </div>
+            
+        <br>
+        <br>
+        <br>
+    <input type="submit" value="Submit" class="submit-button">
+            
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<title>View Employee Details</title>
+<link rel="stylesheet" href="../static/css/table.css">
+
+<head>
+</head>
+<body>
+<h1>staff</h1>
+<table>
+    <thead>
+        <tr> 
+            <th>name</th>
+            <th>staff_id</th>
+            <th>dept</th>
+            <th>mail_id</th> 
+        </tr>
+        <tbody>
+            {% for i in sqldata %}
+            <tr>
+                <td>{{i[0]}}</td>          
+                <td>{{i[1]}}</td>
+                <td>{{i[2]}}</td>
+                <td>{{i[3]}}</td>
+                
+            </tr>
+            {% endfor %}
+        </tbody>
+     </thead>
+    
+</table>
+</body>
+</html>

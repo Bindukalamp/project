@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Project</title>
+    <link rel="stylesheet" href="../static/css/form.css">
+</head>
+<body>
+    <h2>Edit Project</h2>
+    <form method="post" action="{{ url_for('edit_project', project=project[0]) }}">
+        <label for="project">Project:</label>
+        <input type="text" name="project" value="{{ project[0] }}" required><br>
+
+        <label for="in_charge">In Charge:</label>
+        <input type="text" name="in_charge" value="{{ project[1] }}" required><br>
+
+        <label for="starting_date">Starting Date:</label>
+        <input type="text" name="starting_date" value="{{ project[2] }}" required><br>
+
+        <label for="due_date">Due Date:</label>
+        <input type="text" name="due_date" value="{{ project[3] }}" required><br>
+
+        <label for="status">Status:</label>
+        <input type="text" name="status" value="{{ project[4] }}" required><br>
+
+        <label for="id">ID:</label>
+        <input type="text" name="id" value="{{ project[5] }}" required><br>
+
+        <input type="submit" value="Update Project" class="submit-button">
+    </form>
+</body>
+</html>
